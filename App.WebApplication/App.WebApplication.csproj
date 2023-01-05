@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="4.0.4" />
+    <PackageReference Include="LazZiya.TagHelpers" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.RazorPages" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Logging" Version="6.25.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.25.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.API\App.API.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\Pager\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\Pager\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Contact\Edit.cshtml" />
+    <None Include="Views\Contact\Index.cshtml" />
+    <None Include="Views\Promotion\Edit.cshtml" />
+    <None Include="Views\Promotion\Index.cshtml" />
+    <None Include="wwwroot\js\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\js\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\js\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\js\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\js\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\js\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\js\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\js\jquery\dist\jquery.js" />
+    <None Include="wwwroot\js\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\js\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\SlideImage\" />
+  </ItemGroup>
+
+</Project>
